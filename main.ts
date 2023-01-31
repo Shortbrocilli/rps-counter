@@ -1,11 +1,14 @@
 input.onButtonPressed(Button.A, function () {
-	
+    p1 += 1
+    rounds += 1
 })
 input.onButtonPressed(Button.AB, function () {
-	
+    ties += 1
+    rounds += 1
 })
 input.onButtonPressed(Button.B, function () {
-	
+    p2 += 1
+    rounds += 1
 })
 input.onGesture(Gesture.Shake, function () {
     Reset()
@@ -30,8 +33,8 @@ function updateScores () {
     OLED.newLine()
     OLED.writeStringNewLine("Rounds:" + rounds)
 }
-let ties = 0
 let p2 = 0
-let p1 = 0
+let ties = 0
 let rounds = 0
+let p1 = 0
 Reset()
