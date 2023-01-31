@@ -1,14 +1,17 @@
 input.onButtonPressed(Button.A, function () {
     p1 += 1
     rounds += 1
+    updateScores()
 })
 input.onButtonPressed(Button.AB, function () {
     ties += 1
     rounds += 1
+    updateScores()
 })
 input.onButtonPressed(Button.B, function () {
     p2 += 1
     rounds += 1
+    updateScores()
 })
 input.onGesture(Gesture.Shake, function () {
     Reset()
