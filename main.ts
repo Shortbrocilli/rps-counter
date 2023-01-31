@@ -1,14 +1,17 @@
 input.onButtonPressed(Button.A, function () {
+    basic.showString("A")
     p1 += 1
     rounds += 1
     updateScores()
 })
 input.onButtonPressed(Button.AB, function () {
+    basic.showString("T")
     ties += 1
     rounds += 1
     updateScores()
 })
 input.onButtonPressed(Button.B, function () {
+    basic.showString("B")
     p2 += 1
     rounds += 1
     updateScores()
