@@ -18,7 +18,7 @@ input.onGesture(Gesture.Shake, function () {
 })
 function Reset () {
     OLED.init(128, 64)
-    OLED.writeStringNewLine("RPS counter initializing")
+    OLED.writeStringNewLine("Initializing")
     rounds = 0
     p1 = 0
     p2 = 0
